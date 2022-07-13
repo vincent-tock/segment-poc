@@ -17,7 +17,7 @@ const users = [
 ];
 
 function App() {
-  const [currentUser, setCurrentUser] = React.useState();
+  const [currentUser, setCurrentUser] = React.useState(users[0]);
   console.log(currentUser);
   React.useEffect(() => {
     if (currentUser) {
@@ -50,7 +50,7 @@ function App() {
       setCurrentUser(users[0]);
     }
 
-    if (currentUser.id === "1") {
+    if (currentUser.id === "100001") {
       console.log("logging in Emmanuel");
       // to Emmanuel
       console.log(users[1]);
